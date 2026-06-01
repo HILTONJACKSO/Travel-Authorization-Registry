@@ -90,7 +90,7 @@ DATABASES = {
         'NAME': 'ministry_doc_db',
         'USER': 'postgres',
         'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': 'localhost',
+        'HOST': os.environ.get('DB_HOST', 'localhost'),
         'PORT': '5432',
     }
 }
